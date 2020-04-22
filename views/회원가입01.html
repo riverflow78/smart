@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>회원가입-회원구분</title>
+
+	<!-- [common css] -->
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/frame.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/contents.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/popup.css" />
+
+	<!-- [common js] : 전체 페이지 공통사용 스크립트만 기재. 페이지별 독립 스크립트는 페이지 하단의 스크립트영역에 추가. -->
+	<script type="text/javascript" src="../asset/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
+
+	<!-- [vendor] -->
+	<!-- swiper -->
+	<link rel="stylesheet" type="text/css" href="../asset/vendor/swiper/swiper.css" />
+	<script type="text/javascript" src="../asset/vendor/swiper/swiper.js"></script>
+	<!-- bootstrap-3.4.1 -->
+	<script type="text/javascript" src="../asset/vendor/bootstrap/bootstrap-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<h1><a href="#" title="홈">전기안전여기로</a></h1>
+				<div class="gnb">
+					<ul>
+						<li><a href="#none" class="depth1" title="민원신청 메뉴">민원신청</a>
+							<ul>
+								<!-- 활성화 active -->
+								<li><a href="#"  class="active" title="민원신청안내 페이지로이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="수수료안내/납부 메뉴">수수료안내/납부</a>
+							<ul>
+								<li><a href="#" title="수수료 안내 페이지로이동">수수료 안내</a></li>
+								<li><a href="#" title="수수료 결제 페이지로이동">수수료 결제</a></li>
+								<li><a href="#" title="전자세금계산서 확인 페이지로이동">전자세금계산서 확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="알림마당 메뉴">알림마당</a>
+							<ul>
+								<li><a href="#" title="민원신청 이용안내 페이지로이동">민원신청 이용안내</a></li>
+								<li><a href="#" title="공지사항 페이지로이동">공지사항</a></li>
+								<li><a href="#" title="자주묻는 질문(FAQ) 페이지로이동">자주묻는 질문(FAQ)</a></li>
+								<li><a href="#" title="질문 답변(Q&amp;A) 페이지로이동">질문 답변(Q&amp;A)</a></li>
+								<li><a href="#" title="통합자료실 페이지로이동">통합자료실</a></li>
+								<li><a href="#" title="확인증 진위확인 페이지로이동">확인증 진위확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="나의민원 메뉴">나의민원</a>
+							<ul>
+								<li><a href="#" title="민원신청 내역 페이지로이동">민원신청 내역</a></li>
+								<li><a href="#" title="사용전점검 결과확인 페이지로이동">사용전점검 결과확인</a></li>
+								<li><a href="#" title="위임자 관리 페이지로이동">위임자 관리</a></li>
+								<li><a href="#" title="협업자 관리 페이지로이동">협업자 관리</a></li>
+								<li><a href="#" title="설비정보 관리 페이지로이동">설비정보 관리</a></li>
+								<li><a href="#" title="업체 등록정보 관리 페이지로이동">업체 등록정보 관리</a></li>
+								<li><a href="#" title="전기안전관리자 점검관리페이지로이동">전기안전관리자 점검관리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul class="utility">
+					<!-- <li><a href="#" title="로그인">로그인</a></li>
+					<li><a href="#" title="회원가입">회원가입</a></li> -->
+					<li><a href="#">로그아웃</a></li>
+					<li><a href="#" title="마이페이지">마이페이지</a></li>
+
+					<!-- 로그인 여부와 관계없이 항상 보인다 -->
+					<li><a href="#" title="사이트맵"><span></span></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<nav class="pnb">
+			<div class="container">
+				<!--
+					-1뎁스 카테고리.
+					-선택하면 해당 페이지로 이동.
+					-이동페이지는 해당 뎁스의 2뎁스 첫 번째.(eg: 1뎁스 민원신청을 누르면 2뎁스 민원신청안내 페이지로 이동)
+					-로그인처럼 독립 메뉴는 .lnb에 .none을 붙여준다.
+				-->
+				<div class="lnb none">
+					<ul>
+						<li><a href="#none" class="depth1" tabindex="-1">회원가입</a></li>
+					</ul>
+				</div>
+				<!--
+					-2뎁스 카테고리.
+					-1뎁스에 해당하는 2뎁스 메뉴 표기
+					-위에서 1뎁스 민원신청을 누르면 민원신청안내 페이지로 이동되고
+					-1뎁스에 해당되는 2뎁스 메뉴를 뿌려준후, current메뉴 표기.
+					-같은 1뎁스 메뉴이동시는 해당 2뎁스 메뉴를 활성화
+					-로그인처럼 2뎁스 메뉴가 없는경우 .lnb를 삭제한다.
+				-->
+				<!-- <div class="lnb none">
+					<ul>
+						<li><a href="#none" class="depth1" tabindex="-1">민원신청안내</a>
+							<ul class="snb">
+								<li><a href="#" class="active" title="민원신청안내 페이지로 이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로 이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로 이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로 이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로 이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로 이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로 이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로 이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</nav>
+
+		<section>
+			<h2>회원구분</h2>
+			<div class="container">
+				<div class="page-header">
+					<span>회원구분</span>
+					<ul>
+						<li><i class="far fa-print"></i></li>
+					</ul>
+				</div>
+				<div class="contents">
+
+					<div class="join01">
+						<ol class="process col5 jointab">
+							<li class="active">
+								<span><strong>Step 01</strong>회원구분</span>
+							</li>
+							<li>
+								<span><strong>Step 02</strong>약관동의</span>
+							</li>
+							<li>
+								<span><strong>Step 03</strong>본인인증</span>
+							</li>
+							<li>
+								<span><strong>Step 04</strong>회원가입정보입력</span>
+							</li>
+							<li>
+								<span><strong>Step 05</strong>회원가입완료</span>
+							</li>
+						</ol>
+
+						<div class="box-skew">
+							<div>
+								<strong>회원유형을 선택해주세요.</strong>
+								<span>민원신청 및 업무의 위임 시 본인확인 확인(공인인증)이 필요합니다. 이때, 본인인증 정보와 회원정보가 일치해야 합니다.</span><br>(시공업체, 감리업체, 설계업체, 전기안전관리자는 기업/법인회원으로 가입해야합니다.)<br>개인회원과 기업/법인 회원은 홈페이지에서 동일한 서비스를 받을 수 있습니다.
+							</div>
+						</div>
+
+						<div class="join_type">
+							<dl>
+								<dt>개인회원</dt>
+								<dd>
+									개인회원이실경우<br>개인 회원가입 버튼을 클릭해주세요.
+									<button type="button" class="btn-default btn-bg-blue">개인 회원가입</button>
+								</dd>
+							</dl>
+							<dl>
+								<dt>기업/법인회원</dt>
+								<dd>
+									기업/법인 회원이실경우<br>기업/법인 회원가입 버튼을 클릭해주세요.
+									<button type="button" class="btn-default btn-bg-blue">기업/법인 회원가입</button>
+								</dd>
+							</dl>
+						</div>
+					</div>
+
+				</div><!-- //contents -->
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<ul>
+					<li><a href="http://www.kesco.or.kr/index.do" target="_blank" title=" 한국전기안전공사 새창 바로가기">한국전기안전공사</a></li>
+					<li><a href="#" target="_blank" title="전기안전포탈시스템 새창 바로가기">전기안전포탈시스템</a></li>
+					<li><a href="http://stc.kesco.or.kr/msi/cntntsService.do?menuId=MNU_0000000000000334" target="_blank" title="안전인증센터 새창 바로가기">V-체크마크 공인시험(안전인증센터)</a></li>
+					<li><a href="http://newedu.kesco.or.kr/main/index.jsp" target="_blank" title="전기안전기술교육원 새창 바로가기">전기안전기술교육원</a></li>
+					<li><a href="http://re.kesco.or.kr/index.do" target="_blank" title="전기안전연구원 새창 바로가기">전기안전연구원</a></li>
+					<li><a href="#" target="_blank" title="공공기관 창의경영시스템 새창 바로가기">공공기관 창의경영시스템</a></li>
+				</ul>
+				<div>
+					<a href="#" title="개인정보처리방침 바로가기">개인정보처리방침</a><a href="#" title="이메일무단수집거부 바로가기">이메일무단수집거부</a><a href="#" title="이용약관 바로가기">이용약관</a>
+					<address>[55365]전북 완주군 이서면 안전로 111</address>
+					<p>COPYRIGHT 2009 KOREA ELECTRICAL SAFETY CORPORATION. All Right Reserved </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		// 페이지 개별 스크립트
+		$(document).ready(function() {
+
+		});
+	</script>
+
+</body>
+</html>

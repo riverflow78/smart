@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>전기안전여기로</title>
+
+	<!-- [common css] -->
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/frame.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/contents.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/popup.css" />
+
+	<!-- [common js] : 전체 페이지 공통사용 스크립트만 기재. 페이지별 독립 스크립트는 페이지 하단의 스크립트영역에 추가. -->
+	<script type="text/javascript" src="../asset/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
+
+	<!-- [vendor] -->
+	<!-- swiper -->
+	<link rel="stylesheet" type="text/css" href="../asset/vendor/swiper/swiper.css" />
+	<script type="text/javascript" src="../asset/vendor/swiper/swiper.js"></script>
+	<!-- bootstrap-3.4.1 -->
+	<script type="text/javascript" src="../asset/vendor/bootstrap/bootstrap-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<h1><a href="#" title="홈">전기안전여기로</a></h1>
+				<div class="gnb">
+					<ul>
+						<li><a href="#none" class="depth1" title="민원신청 메뉴">민원신청</a>
+							<ul>
+								<!-- 활성화 active -->
+								<li><a href="#"  class="active" title="민원신청안내 페이지로이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="수수료안내/납부 메뉴">수수료안내/납부</a>
+							<ul>
+								<li><a href="#" title="수수료 안내 페이지로이동">수수료 안내</a></li>
+								<li><a href="#" title="수수료 결제 페이지로이동">수수료 결제</a></li>
+								<li><a href="#" title="전자세금계산서 확인 페이지로이동">전자세금계산서 확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="알림마당 메뉴">알림마당</a>
+							<ul>
+								<li><a href="#" title="민원신청 이용안내 페이지로이동">민원신청 이용안내</a></li>
+								<li><a href="#" title="공지사항 페이지로이동">공지사항</a></li>
+								<li><a href="#" title="자주묻는 질문(FAQ) 페이지로이동">자주묻는 질문(FAQ)</a></li>
+								<li><a href="#" title="질문 답변(Q&amp;A) 페이지로이동">질문 답변(Q&amp;A)</a></li>
+								<li><a href="#" title="통합자료실 페이지로이동">통합자료실</a></li>
+								<li><a href="#" title="확인증 진위확인 페이지로이동">확인증 진위확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="나의민원 메뉴">나의민원</a>
+							<ul>
+								<li><a href="#" title="민원신청 내역 페이지로이동">민원신청 내역</a></li>
+								<li><a href="#" title="사용전점검 결과확인 페이지로이동">사용전점검 결과확인</a></li>
+								<li><a href="#" title="위임자 관리 페이지로이동">위임자 관리</a></li>
+								<li><a href="#" title="협업자 관리 페이지로이동">협업자 관리</a></li>
+								<li><a href="#" title="설비정보 관리 페이지로이동">설비정보 관리</a></li>
+								<li><a href="#" title="업체 등록정보 관리 페이지로이동">업체 등록정보 관리</a></li>
+								<li><a href="#" title="전기안전관리자 점검관리페이지로이동">전기안전관리자 점검관리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul class="utility">
+					<!-- <li><a href="#" title="로그인">로그인</a></li>
+					<li><a href="#" title="회원가입">회원가입</a></li> -->
+					<li><a href="#">로그아웃</a></li>
+					<li><a href="#" title="마이페이지">마이페이지</a></li>
+
+					<!-- 로그인 여부와 관계없이 항상 보인다 -->
+					<li><a href="#" title="사이트맵"><span></span></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<nav class="pnb">
+			<h2>페이지 네비게이션</h2>
+			<div class="container">
+				<!--
+					-1뎁스 카테고리.
+					-선택하면 해당 페이지로 이동.
+					-이동페이지는 해당 뎁스의 2뎁스 첫 번째.(eg: 1뎁스 민원신청을 누르면 2뎁스 민원신청안내 페이지로 이동)
+				-->
+				<div class="lnb">
+					<ul>
+						<li><a href="#none" class="depth1">민원신청</a>
+							<ul class="snb">
+								<!-- 활성화 active -->
+								<li><a href="#" class="active" title="민원신청 메뉴 보기">민원신청안내</a></li>
+								<li><a href="#" title="수수료안내/납부 메뉴 보기">수수료안내/납부</a></li>
+								<li><a href="#" title="알림마당 메뉴 보기">알림마당</a></li>
+								<li><a href="#" title="나의민원 메뉴 보기">나의민원</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--
+					-2뎁스 카테고리.
+					-1뎁스에 해당하는 2뎁스 메뉴 표기
+					-위에서 1뎁스 민원신청을 누르면 민원신청안내 페이지로 이동 이동되고
+					-1뎁스에 해당되는 2뎁스 메뉴를 뿌려준후, current메뉴 표기.
+					-같은 1뎁스 메뉴이동시는 해당 2뎁스 메뉴를 활성화
+				-->
+				<div class="lnb">
+					<ul>
+						<li><a href="#none" class="depth1">민원신청안내</a><!-- 현재 current 메뉴 표기 -->
+							<ul class="snb">
+								<!-- 활성화 active -->
+								<li><a href="#" class="active" title="민원신청안내 페이지로 이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로 이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로 이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로 이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로 이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로 이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로 이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로 이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section>
+			<h2>공사계획신고</h2>
+			<div class="container">
+				<div class="page-header">
+					<span>공사계획신고</span>
+					<ul>
+						<li><i class="far fa-print"></i></li>
+					</ul>
+				</div>
+				<div class="contents">
+
+
+
+					<ol class="process col6">
+						<li>
+							<span><strong>Step 01</strong>공사계획신고안내</span>
+						</li>
+						<li>
+							<span><strong>Step 02</strong>고객설비찾기</span>
+						</li>
+						<li class="active">
+							<span><strong>Step 03</strong>고객정보입력</span>
+						</li>
+						<li>
+							<span><strong>Step 04</strong>첨부파일등록</span>
+						</li>
+						<li>
+							<span><strong>Step 05</strong>전자서명</span>
+						</li>
+						<li>
+							<span><strong>Step 06</strong>신고서제출</span>
+						</li>
+					</ol>
+
+
+					<div class="align-center mgt30">
+						<ol class="scene">
+							<li class="passed">
+								<span>1</span><span>신청인 정보입력</span>
+							</li>
+							<li class="passed">
+								<span>2</span><span>관계업체정보입력</span>
+							</li>
+							<li class="passed">
+								<span>3</span><span>호기정보입력</span>
+							</li>
+							<li class="passed">
+								<span>4</span><span>금회 검사받을 전기설비</span>
+							</li>
+						</ol>
+					</div>
+
+					<p class="title-depth1 mgt30">금회 검사받을 전기설비</p>
+					<table data-table="table" class="th-left td-left mgt15"><!-- 20200422 modify -->
+						<colgroup>
+							<col width="15%"><col width="35%"><col width="15%"><col width="35%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>주소</th>
+								<td colspan="3" class="address_group">
+									<ul>
+										<li class="ad_row1">
+											<em class="fs13 fc_gray2">(우편번호)</em> 12345
+										</li>
+										<li class="ad_row2">
+											<span><em class="fs13 fc_gray2">(지번주소)</em> <b class="fs16">전라북도 완주군 이서면 갈산리 644</b></span>
+											<span><em class="fs13 fc_gray2">(도로명주소)</em> <b class="fs16">전라북도 완주군 이서면 안전로 111</b></span>
+										</li>
+										<li class="ad_row3">
+											<em class="fs13 fc_gray2">(상세주소)</em> <b class="fs16">상세주소</b>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<th>회사명(상호)</th>
+								<td><b class="fs16">OO산업</b></td>
+								<th>대표자</th>
+								<td><b class="fs16">홍길동</b></td>
+							</tr>
+						</tbody>
+					</table>
+
+
+					<div class="search-option filter_area mgt30"><!-- 20200422 modify -->
+						<strong class="fs18">1호기</strong>
+						<b class="fs16">자가용수전(일반 수전설비)</b>
+					</div>
+
+
+					<table data-table="table" class="th-left td-left mgt20">
+						<colgroup>
+							<col width="15%"><col width="35%"><col width="15%"><col width="35%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>전기설비 개요</th>
+								<td colspan="3">
+									<span><em class="fs13 fc_gray2">(전압)</em> 22900V</span>
+									<span class="mgl45"><em class="fs13 fc_gray2">(용량)</em> 1,000kW</span>
+									<b class="mgl45">수용설비</b>
+								</td>
+							</tr>
+							<tr>
+								<th>설비구분 및 유형</th>
+								<td>자가용 수전설비(일반 수전설비)</td>
+								<th>업종유형</th>
+								<td>아파트</td>
+							</tr>
+							<tr>
+								<th>가공전선로</th>
+								<td>콘크리트주 6기, 철탑3기</td>
+								<th>지중전선로</th>
+								<td>2회선</td>
+							</tr>
+							<tr>
+								<th>신청범위</th>
+								<td colspan="3"><b class="fs16 fc_blue">OO아파트 신축공사</b></td>
+							</tr>
+							<tr>
+								<th>공사종류</th>
+								<td>설치공사</td>
+								<th>신청종류</th>
+								<td>수용설비 용량증설 등 2건</td>
+							</tr>
+							<tr>
+								<th>비고</th>
+								<td colspan="3">통합접지공사-부분검사(접지저항측정검사)대상</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+					<table data-table="table" class="th-center td-center mgt20">
+						<colgroup>
+							<col span="10">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>호기</th>
+								<th>공사종류</th>
+								<th>수변전실</th>
+								<th>큐비클(판넬)명</th>
+								<th>종류</th>
+								<th>용도</th>
+								<th>상수</th>
+								<th>정격<br>용량(kW)</th>
+								<th>1차경적<br>전압(V)</th>
+								<th>신설 및 이설<br>(재사용)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td class="text-info">수전용 용량증설</td>
+								<td>제1변전실</td>
+								<td>SHV/5반</td>
+								<td>건식[몰드]</td>
+								<td>수전용</td>
+								<td>3상</td>
+								<td><b class="text-info">500</b></td>
+								<td>154,000</td>
+								<td>신설</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td class="text-info">구내배전 추가설치</td>
+								<td>제1변전실</td>
+								<td>SHV/5반</td>
+								<td>건식[몰드]</td>
+								<td>수전용</td>
+								<td>3상</td>
+								<td>500</td>
+								<td>154,000</td>
+								<td>
+									이설
+									<button type="button" class="btn-small btn-line-blue pdl5 pdr5 mw0" data-toggle="modal" data-target="#moveInfo">이설정보</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+					<div class="stepNav buttonGroup align-both mgt100"><!-- 20200422 modify -->
+						<div>
+							<button type="button" class="btn-large btn-line-blue"><i class="fas fa-chevron-left"></i>이전단계</button>
+						</div>
+						<div>
+							<button type="button" class="btn-large btn-bg-blue">다음단계<i class="fas fa-chevron-right"></i></button>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div><!-- //contents -->
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<ul>
+					<li><a href="http://www.kesco.or.kr/index.do" target="_blank" title=" 한국전기안전공사 새창 바로가기">한국전기안전공사</a></li>
+					<li><a href="#" target="_blank" title="전기안전포탈시스템 새창 바로가기">전기안전포탈시스템</a></li>
+					<li><a href="http://stc.kesco.or.kr/msi/cntntsService.do?menuId=MNU_0000000000000334" target="_blank" title="안전인증센터 새창 바로가기">V-체크마크 공인시험(안전인증센터)</a></li>
+					<li><a href="http://newedu.kesco.or.kr/main/index.jsp" target="_blank" title="전기안전기술교육원 새창 바로가기">전기안전기술교육원</a></li>
+					<li><a href="http://re.kesco.or.kr/index.do" target="_blank" title="전기안전연구원 새창 바로가기">전기안전연구원</a></li>
+					<li><a href="#" target="_blank" title="공공기관 창의경영시스템 새창 바로가기">공공기관 창의경영시스템</a></li>
+				</ul>
+				<div>
+					<a href="#" title="개인정보처리방침 바로가기">개인정보처리방침</a><a href="#" title="이메일무단수집거부 바로가기">이메일무단수집거부</a><a href="#" title="이용약관 바로가기">이용약관</a>
+					<address>[55365]전북 완주군 이서면 안전로 111</address>
+					<p>COPYRIGHT 2009 KOREA ELECTRICAL SAFETY CORPORATION. All Right Reserved </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- [s] 20200420 모달 : 이설정보 -->
+	<div class="modal " id="moveInfo" role="dialog">
+		<div class="modal-dialog" style="width:900px">
+			<div class="modal-content">
+				<div class="modal-header">
+					이설 기기이전 사업장 정보
+					<button type="button" class="close" data-dismiss="modal">모달닫기</button>
+				</div>
+				<div class="modal-body">
+					<table data-table="table" class="th-left td-left">
+						<colgroup>
+							<col width="20%"><col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>기기일련번호</th>
+								<td>1234567890</td>
+							</tr>
+							<tr>
+								<th>이전사업장 주소</th>
+								<td>전라북도 완주군 이서면 갈산리 267</td>
+							</tr>
+							<tr>
+								<th>이전사업장 상호</th>
+								<td>OO산업</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- [e] 20200420 모달 : 이설정보 -->
+
+	<script>
+		// 페이지 개별 스크립트
+		$( document ).ready(function() {
+
+		});
+	</script>
+
+</body>
+</html>

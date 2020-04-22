@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>전기안전여기로</title>
+
+	<!-- [common css] -->
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/frame.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/contents.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/popup.css" />
+
+	<!-- [common js] : 전체 페이지 공통사용 스크립트만 기재. 페이지별 독립 스크립트는 페이지 하단의 스크립트영역에 추가. -->
+	<script type="text/javascript" src="../asset/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
+
+	<!-- [vendor] -->
+	<!-- swiper -->
+	<link rel="stylesheet" type="text/css" href="../asset/vendor/swiper/swiper.css" />
+	<script type="text/javascript" src="../asset/vendor/swiper/swiper.js"></script>
+	<!-- bootstrap-3.4.1 -->
+	<script type="text/javascript" src="../asset/vendor/bootstrap/bootstrap-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<h1><a href="#" title="홈">전기안전여기로</a></h1>
+				<div class="gnb">
+					<ul>
+						<li><a href="#none" class="depth1" title="민원신청 메뉴">민원신청</a>
+							<ul>
+								<!-- 활성화 active -->
+								<li><a href="#"  class="active" title="민원신청안내 페이지로이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="수수료안내/납부 메뉴">수수료안내/납부</a>
+							<ul>
+								<li><a href="#" title="수수료 안내 페이지로이동">수수료 안내</a></li>
+								<li><a href="#" title="수수료 결제 페이지로이동">수수료 결제</a></li>
+								<li><a href="#" title="전자세금계산서 확인 페이지로이동">전자세금계산서 확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="알림마당 메뉴">알림마당</a>
+							<ul>
+								<li><a href="#" title="민원신청 이용안내 페이지로이동">민원신청 이용안내</a></li>
+								<li><a href="#" title="공지사항 페이지로이동">공지사항</a></li>
+								<li><a href="#" title="자주묻는 질문(FAQ) 페이지로이동">자주묻는 질문(FAQ)</a></li>
+								<li><a href="#" title="질문 답변(Q&amp;A) 페이지로이동">질문 답변(Q&amp;A)</a></li>
+								<li><a href="#" title="통합자료실 페이지로이동">통합자료실</a></li>
+								<li><a href="#" title="확인증 진위확인 페이지로이동">확인증 진위확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="나의민원 메뉴">나의민원</a>
+							<ul>
+								<li><a href="#" title="민원신청 내역 페이지로이동">민원신청 내역</a></li>
+								<li><a href="#" title="사용전점검 결과확인 페이지로이동">사용전점검 결과확인</a></li>
+								<li><a href="#" title="위임자 관리 페이지로이동">위임자 관리</a></li>
+								<li><a href="#" title="협업자 관리 페이지로이동">협업자 관리</a></li>
+								<li><a href="#" title="설비정보 관리 페이지로이동">설비정보 관리</a></li>
+								<li><a href="#" title="업체 등록정보 관리 페이지로이동">업체 등록정보 관리</a></li>
+								<li><a href="#" title="전기안전관리자 점검관리페이지로이동">전기안전관리자 점검관리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul class="utility">
+					<!-- <li><a href="#" title="로그인">로그인</a></li>
+					<li><a href="#" title="회원가입">회원가입</a></li> -->
+					<li><a href="#">로그아웃</a></li>
+					<li><a href="#" title="마이페이지">마이페이지</a></li>
+
+					<!-- 로그인 여부와 관계없이 항상 보인다 -->
+					<li><a href="#" title="사이트맵"><span></span></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<nav class="pnb">
+			<h2>페이지 네비게이션</h2>
+			<div class="container">
+				<!--
+					-1뎁스 카테고리.
+					-선택하면 해당 페이지로 이동.
+					-이동페이지는 해당 뎁스의 2뎁스 첫 번째.(eg: 1뎁스 민원신청을 누르면 2뎁스 민원신청안내 페이지로 이동)
+				-->
+				<div class="lnb">
+					<ul>
+						<li><a href="#none" class="depth1" tabindex="-1">회원가입</a>
+							<ul class="snb">
+								<!-- 활성화 active -->
+								<li><a href="#" class="active" title="민원신청 메뉴 보기">민원신청안내</a></li>
+								<li><a href="#" title="수수료안내/납부 메뉴 보기">수수료안내/납부</a></li>
+								<li><a href="#" title="알림마당 메뉴 보기">알림마당</a></li>
+								<li><a href="#" title="나의민원 메뉴 보기">나의민원</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--
+					-2뎁스 카테고리.
+					-1뎁스에 해당하는 2뎁스 메뉴 표기
+					-위에서 1뎁스 민원신청을 누르면 민원신청안내 페이지로 이동 이동되고
+					-1뎁스에 해당되는 2뎁스 메뉴를 뿌려준후, current메뉴 표기.
+					-같은 1뎁스 메뉴이동시는 해당 2뎁스 메뉴를 활성화
+				-->
+				<div class="lnb">
+					<ul>
+						<li><a href="#none" class="depth1" tabindex="-1">민원신청안내</a><!-- 현재 current 메뉴 표기 -->
+							<ul class="snb">
+								<!-- 활성화 active -->
+								<li><a href="#" class="active" title="민원신청안내 페이지로 이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로 이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로 이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로 이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로 이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로 이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로 이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로 이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section>
+			<h2>사용전검사</h2>
+			<div class="container">
+				<div class="page-header">
+					<span>사용전검사</span>
+					<ul>
+						<li><i class="far fa-print"></i></li>
+					</ul>
+				</div>
+				<div class="contents">
+
+					<div class="confirm_area">
+						<p>정상적으로 <b>접수 및 수수료 결제가 완료</b>되었습니다.</p>
+						<ul class="search-option">
+							<li><i class="fas fa-chevron-right"></i> 민원신청번호 : <b class="fc_blue">125485</b></li>
+							<li><i class="fas fa-chevron-right"></i> 검사희망일자 : <b class="fc_blue">2020년 4월 20일 22:00</b> 심야(수수료 30% 할증)</li>
+						</ul>
+					</div>
+
+					<p class="title-depth1 mgt50">수수료 결제 내역</p>
+					<div class="box-skew mgt15"><!-- 20200422 modify -->
+						<div class="pdl40 pdr40 pdt40 pdb40">
+							<table data-table="table" class="th-left td-left">
+								<colgroup>
+									<col width="10%"><col><col width="10%"><col><col width="10%"><col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>공급가액</th>
+										<td class="fc_blue">805,000</td>
+										<th>세액</th>
+										<td class="fc_blue">89,500</td>
+										<th>합계</th>
+										<td class="fc_blue"><b>895,000</b></td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="align-center mgt20">
+								<button type="button" class="btn-default btn-line-blue"><b>수수료 상세 내역서 PDF 다운로드</b></button>
+								<button type="button" class="btn-default btn-line-blue mgl10"><b>수수료 상세 내역보기</b></button>
+							</p>
+						</div>
+					</div>
+					<ul class="list mgt10">
+						<li>실시간 결제가 아닌 가상계좌 입금 방법 등을 이용한 결제 진행 시 가상계좌 입금 기간 만료(또는 검사 희망일 기준 3일)전 까지 수수료 입금이 완료되어야 검사일정이 확정 됩니다.</li>
+						<li>가상계좌 입금 기간 만료 시 기존에 지정하신 검사 희망일은 초기화 되며 희망일을 다시 지정 하셔야 합니다.</li>
+					</ul>
+
+
+					<div class="box-skew mgt50">
+						<div class="pdl25 pdr25 pdt40 pdb40">
+							<p class="text-info fs20"><i class="fas fa-exclamation-circle"></i><span><b class="fc_default">검사 관련 안내 사항</b></span></p>
+							<p class="text-info fc_gray1 mgt10 mgl25">원활 검사 진행이 될 수 있도록 소유자/점유자 및 관계자에게 검사 일정 공유, 검사 시 발생할 수 있는 주의사항 및 안전관련 사전조치 사항 등을 반드시 안내 하시기 바랍니다.</p>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div><!-- //contents -->
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<ul>
+					<li><a href="http://www.kesco.or.kr/index.do" target="_blank" title=" 한국전기안전공사 새창 바로가기">한국전기안전공사</a></li>
+					<li><a href="#" target="_blank" title="전기안전포탈시스템 새창 바로가기">전기안전포탈시스템</a></li>
+					<li><a href="http://stc.kesco.or.kr/msi/cntntsService.do?menuId=MNU_0000000000000334" target="_blank" title="안전인증센터 새창 바로가기">V-체크마크 공인시험(안전인증센터)</a></li>
+					<li><a href="http://newedu.kesco.or.kr/main/index.jsp" target="_blank" title="전기안전기술교육원 새창 바로가기">전기안전기술교육원</a></li>
+					<li><a href="http://re.kesco.or.kr/index.do" target="_blank" title="전기안전연구원 새창 바로가기">전기안전연구원</a></li>
+					<li><a href="#" target="_blank" title="공공기관 창의경영시스템 새창 바로가기">공공기관 창의경영시스템</a></li>
+				</ul>
+				<div>
+					<a href="#" title="개인정보처리방침 바로가기">개인정보처리방침</a><a href="#" title="이메일무단수집거부 바로가기">이메일무단수집거부</a><a href="#" title="이용약관 바로가기">이용약관</a>
+					<address>[55365]전북 완주군 이서면 안전로 111</address>
+					<p>COPYRIGHT 2009 KOREA ELECTRICAL SAFETY CORPORATION. All Right Reserved </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		// 페이지 개별 스크립트
+		$( document ).ready(function() {
+
+		});
+	</script>
+
+</body>
+</html>

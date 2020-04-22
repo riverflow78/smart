@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>전기안전여기로</title>
+
+	<!-- [common css] -->
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/frame.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/contents.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/popup.css" />
+
+	<!-- [common js] : 전체 페이지 공통사용 스크립트만 기재. 페이지별 독립 스크립트는 페이지 하단의 스크립트영역에 추가. -->
+	<script type="text/javascript" src="../asset/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
+
+	<!-- [vendor] -->
+	<!-- swiper -->
+	<link rel="stylesheet" type="text/css" href="../asset/vendor/swiper/swiper.css" />
+	<script type="text/javascript" src="../asset/vendor/swiper/swiper.js"></script>
+	<!-- bootstrap-3.4.1 -->
+	<script type="text/javascript" src="../asset/vendor/bootstrap/bootstrap-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div class="address_popup2">
+		<div class="addList">
+			<div class="addSch">
+				<input type="text"><button type="submit">검색</button>
+			</div>
+
+			<!--
+				- 검색 결과
+				- branch_list 디폴트 숨김.
+				- branch_list에 .block 클래스가 붙으면 보임.
+				- 리스트는 페이지당 7개
+			-->
+			<div class="branch_list block">
+				<p>&middot; 도로명주소 검색 결과 <strong>(97건)</strong></p>
+				<table data-table="map">
+					<colgroup>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>도로명주소</th>
+							<th>우편번호</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="3" class="none">검색된 내용이 없습니다.</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>
+								<a>
+									<strong>경기도 의정부시 평화로 30 (호원동)</strong>
+									<span>[지번] 경기도 의정부시 호원동 187-5 엔진마스터</span>
+								</a>
+							</td>
+							<td>11648</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>
+								<a>
+									<strong>경기도 의정부시 평화로 30 (호원동)</strong>
+									<span>[지번] 경기도 의정부시 호원동 187-5 엔진마스터</span>
+								</a>
+							</td>
+							<td>11648</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>
+								<a>
+									<strong>경기도 의정부시 평화로 30 (호원동)</strong>
+									<span>[지번] 경기도 의정부시 호원동 187-5 엔진마스터</span>
+								</a>
+							</td>
+							<td>11648</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>
+								<a>
+									<strong>경기도 의정부시 평화로 30 (호원동)</strong>
+									<span>[지번] 경기도 의정부시 호원동 187-5 엔진마스터</span>
+								</a>
+							</td>
+							<td>11648</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>
+								<a>
+									<strong>경기도 의정부시 평화로 30 (호원동)</strong>
+									<span>[지번] 경기도 의정부시 호원동 187-5 엔진마스터</span>
+								</a>
+							</td>
+							<td>11648</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>
+								<a>
+									<strong>경기도 의정부시 평화로 30 (호원동)</strong>
+									<span>[지번] 경기도 의정부시 호원동 187-5 엔진마스터</span>
+								</a>
+							</td>
+							<td>11648</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagination">
+					<a href="#">처음</a>
+					<strong>1</strong>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">다음</a>
+				</div>
+			</div>
+
+
+			<!--
+				- 상세주소입력
+				- branch_list_detail 디폴트 숨김.
+				- branch_list_detail에 .block 클래스가 붙으면 보임.
+			-->
+			<div class="branch_list_detail ">
+				<p>&middot; 상세주소 입력</p>
+				<table data-table="map2">
+					<colgroup>
+						<col width="20%">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>도로명주소</th>
+							<td>
+								<strong>경기도 의정부시 평화로 30 (호원동)</strong>
+							</td>
+						</tr>
+						<tr>
+							<th>상세주소입력</th>
+							<td>
+								<input type="text"><span>(호원동)</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button" class="inline blue">주소입력</button>
+			</div>
+
+	</div>
+
+
+	<script>
+		// 페이지 개별 스크립트
+		$(document).ready(function() {
+
+		});
+	</script>
+
+</body>
+</html>

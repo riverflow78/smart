@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>회원가입-정보입력</title>
+
+	<!-- [common css] -->
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/frame.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/contents.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/popup.css" />
+
+	<!-- [common js] : 전체 페이지 공통사용 스크립트만 기재. 페이지별 독립 스크립트는 페이지 하단의 스크립트영역에 추가. -->
+	<script type="text/javascript" src="../asset/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
+
+	<!-- [vendor] -->
+	<!-- swiper -->
+	<link rel="stylesheet" type="text/css" href="../asset/vendor/swiper/swiper.css" />
+	<script type="text/javascript" src="../asset/vendor/swiper/swiper.js"></script>
+	<!-- bootstrap-3.4.1 -->
+	<script type="text/javascript" src="../asset/vendor/bootstrap/bootstrap-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<h1><a href="#" title="홈">전기안전여기로</a></h1>
+				<div class="gnb">
+					<ul>
+						<li><a href="#none" class="depth1" title="민원신청 메뉴">민원신청</a>
+							<ul>
+								<!-- 활성화 active -->
+								<li><a href="#"  class="active" title="민원신청안내 페이지로이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="수수료안내/납부 메뉴">수수료안내/납부</a>
+							<ul>
+								<li><a href="#" title="수수료 안내 페이지로이동">수수료 안내</a></li>
+								<li><a href="#" title="수수료 결제 페이지로이동">수수료 결제</a></li>
+								<li><a href="#" title="전자세금계산서 확인 페이지로이동">전자세금계산서 확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="알림마당 메뉴">알림마당</a>
+							<ul>
+								<li><a href="#" title="민원신청 이용안내 페이지로이동">민원신청 이용안내</a></li>
+								<li><a href="#" title="공지사항 페이지로이동">공지사항</a></li>
+								<li><a href="#" title="자주묻는 질문(FAQ) 페이지로이동">자주묻는 질문(FAQ)</a></li>
+								<li><a href="#" title="질문 답변(Q&amp;A) 페이지로이동">질문 답변(Q&amp;A)</a></li>
+								<li><a href="#" title="통합자료실 페이지로이동">통합자료실</a></li>
+								<li><a href="#" title="확인증 진위확인 페이지로이동">확인증 진위확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="나의민원 메뉴">나의민원</a>
+							<ul>
+								<li><a href="#" title="민원신청 내역 페이지로이동">민원신청 내역</a></li>
+								<li><a href="#" title="사용전점검 결과확인 페이지로이동">사용전점검 결과확인</a></li>
+								<li><a href="#" title="위임자 관리 페이지로이동">위임자 관리</a></li>
+								<li><a href="#" title="협업자 관리 페이지로이동">협업자 관리</a></li>
+								<li><a href="#" title="설비정보 관리 페이지로이동">설비정보 관리</a></li>
+								<li><a href="#" title="업체 등록정보 관리 페이지로이동">업체 등록정보 관리</a></li>
+								<li><a href="#" title="전기안전관리자 점검관리페이지로이동">전기안전관리자 점검관리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul class="utility">
+					<!-- <li><a href="#" title="로그인">로그인</a></li>
+					<li><a href="#" title="회원가입">회원가입</a></li> -->
+					<li><a href="#">로그아웃</a></li>
+					<li><a href="#" title="마이페이지">마이페이지</a></li>
+
+					<!-- 로그인 여부와 관계없이 항상 보인다 -->
+					<li><a href="#" title="사이트맵"><span></span></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<nav class="pnb">
+			<div class="container">
+				<!--
+					-1뎁스 카테고리.
+					-선택하면 해당 페이지로 이동.
+					-이동페이지는 해당 뎁스의 2뎁스 첫 번째.(eg: 1뎁스 민원신청을 누르면 2뎁스 민원신청안내 페이지로 이동)
+					-로그인처럼 독립 메뉴는 .lnb에 .none을 붙여준다.
+				-->
+				<div class="lnb none">
+					<ul>
+						<li><a href="#none" class="depth1" tabindex="-1">회원가입</a></li>
+					</ul>
+				</div>
+				<!--
+					-2뎁스 카테고리.
+					-1뎁스에 해당하는 2뎁스 메뉴 표기
+					-위에서 1뎁스 민원신청을 누르면 민원신청안내 페이지로 이동되고
+					-1뎁스에 해당되는 2뎁스 메뉴를 뿌려준후, current메뉴 표기.
+					-같은 1뎁스 메뉴이동시는 해당 2뎁스 메뉴를 활성화
+					-로그인처럼 2뎁스 메뉴가 없는경우 .lnb를 삭제한다.
+				-->
+				<!-- <div class="lnb none">
+					<ul>
+						<li><a href="#none" class="depth1" tabindex="-1">민원신청안내</a>
+							<ul class="snb">
+								<li><a href="#" class="active" title="민원신청안내 페이지로 이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로 이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로 이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로 이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로 이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로 이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로 이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로 이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</nav>
+
+		<section>
+			<h2>회원가입정보입력</h2>
+			<div class="container">
+				<div class="page-header">
+					<span>회원가입정보입력</span>
+					<ul>
+						<li><i class="far fa-print"></i></li>
+					</ul>
+				</div>
+				<div class="contents">
+
+					<div class="join04">
+						<ol class="process col5 jointab">
+							<li>
+								<span><strong>Step 01</strong>회원구분</span>
+							</li>
+							<li>
+								<span><strong>Step 02</strong>약관동의</span>
+							</li>
+							<li>
+								<span><strong>Step 03</strong>본인인증</span>
+							</li>
+							<li class="active">
+								<span><strong>Step 04</strong>회원가입정보입력</span>
+							</li>
+							<li>
+								<span><strong>Step 05</strong>회원가입완료</span>
+							</li>
+						</ol>
+
+						<p class="title-depth1">필수입력사항 </p>
+						<p class="text-info"><span>※ 성명과 전화번호는 아이디/비밀번호 찾기 활용되는 정보이니 정확하게 입력해주시기 바랍니다.</span></p>
+
+						<table data-table="table" class="th-left td-left">
+							<colgroup>
+								<col width="15%">
+								<col>
+								<col width="15%">
+								<col>
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>아이디(이메일) <b class="fc_red">*</b></th>
+									<td colspan="3">
+										<input type="text"><button type="button" class="btn-default btn-bg-gray">중복체크</button>
+									</td>
+								</tr>
+								<tr>
+									<th>비밀번호 <b class="fc_red">*</b></th>
+									<td colspan="3">
+										<input type="text"><span>(영문 대문자 / 소문자, 숫자 및 특수문자중에서 2종류 이상으로 최소 10자~16자)</span>
+									</td>
+								</tr>
+								<tr>
+									<th>비밀번호 확인 <b class="fc_red">*</b></th>
+									<td colspan="3">
+										<input type="text">
+									</td>
+								</tr>
+								<tr>
+									<th>상호(법인명) <b class="fc_red">*</b></th>
+									<td colspan="3">
+										<input type="text">
+									</td>
+								</tr>
+								<tr>
+									<th>대표자성명 <b class="fc_red">*</b></th>
+									<td>
+										<input type="text">
+									</td>
+									<th>사업자등록번호 <b class="fc_red">*</b></th>
+									<td>
+										<input type="text"><button type="button" class="btn-default btn-bg-gray">업체등록</button>
+									</td>
+								</tr>
+								<tr>
+									<th>담당자성명 <b class="fc_red">*</b></th>
+									<td>
+										<input type="text">
+									</td>
+									<th>담당자 생년월일  <b class="fc_red">*</b></th>
+									<td>
+										<input type="text">
+									</td>
+								</tr>
+								<tr>
+									<th>연락처 <b class="fc_red">*</b></th>
+									<td>
+										<select>
+											<option>선택</option>
+										</select>
+										<input type="text">
+									</td>
+									<th>연락처</th>
+									<td>
+										<select>
+											<option>선택</option>
+										</select>
+										<input type="text">
+									</td>
+								</tr>
+								<tr>
+									<th>주소</th>
+									<td colspan="3">
+										<input type="text" class="email" placeholder="우편번호"><button type="button" class="btn-default btn-bg-gray">주소검색</button>
+										<div class="address">
+											<input type="text" class="address1" placeholder="지번주소"><input type="text" class="address2" placeholder="도로명주소">
+											<input type="text" class="address3" placeholder="상세주소">
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>업종구분</th>
+									<td colspan="3">
+										<div class="custom-check inline">
+											<input type="checkbox" id="bizkind01">
+											<label for="bizkind01"><span>시공업체</span></label>
+										</div>
+										<div class="custom-check inline">
+											<input type="checkbox" id="bizkind02">
+											<label for="bizkind02"><span>전기안전관리자</span></label>
+										</div>
+										<div class="custom-check inline">
+											<input type="checkbox" id="bizkind03">
+											<label for="bizkind03"><span>설계업체</span></label>
+										</div>
+										<div class="custom-check inline">
+											<input type="checkbox" id="bizkind04">
+											<label for="bizkind04"><span>감리업체</span></label>
+										</div>
+										<div class="custom-check inline">
+											<input type="checkbox" id="bizkind05">
+											<label for="bizkind05"><span>기타</span></label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>수신동의</th>
+									<td colspan="3">
+										<div class="custom-check inline">
+											<input type="checkbox" id="receive01">
+											<label for="receive01"><span>SNS수신동의</span></label>
+										</div>
+										<div class="custom-check inline">
+											<input type="checkbox" id="receive02">
+											<label for="receive02"><span>Email수신동의</span></label>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="stepNav">
+							<div class="buttonGroup align-both">
+								<div>
+									<button type="button" class="btn-large btn-line-blue"><i class="fas fa-chevron-left"></i>이전단계</button>
+								</div>
+								<div>
+									<button type="button" class="btn-large btn-bg-blue">다음단계<i class="fas fa-chevron-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- //contents -->
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<ul>
+					<li><a href="http://www.kesco.or.kr/index.do" target="_blank" title=" 한국전기안전공사 새창 바로가기">한국전기안전공사</a></li>
+					<li><a href="#" target="_blank" title="전기안전포탈시스템 새창 바로가기">전기안전포탈시스템</a></li>
+					<li><a href="http://stc.kesco.or.kr/msi/cntntsService.do?menuId=MNU_0000000000000334" target="_blank" title="안전인증센터 새창 바로가기">V-체크마크 공인시험(안전인증센터)</a></li>
+					<li><a href="http://newedu.kesco.or.kr/main/index.jsp" target="_blank" title="전기안전기술교육원 새창 바로가기">전기안전기술교육원</a></li>
+					<li><a href="http://re.kesco.or.kr/index.do" target="_blank" title="전기안전연구원 새창 바로가기">전기안전연구원</a></li>
+					<li><a href="#" target="_blank" title="공공기관 창의경영시스템 새창 바로가기">공공기관 창의경영시스템</a></li>
+				</ul>
+				<div>
+					<a href="#" title="개인정보처리방침 바로가기">개인정보처리방침</a><a href="#" title="이메일무단수집거부 바로가기">이메일무단수집거부</a><a href="#" title="이용약관 바로가기">이용약관</a>
+					<address>[55365]전북 완주군 이서면 안전로 111</address>
+					<p>COPYRIGHT 2009 KOREA ELECTRICAL SAFETY CORPORATION. All Right Reserved </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		// 페이지 개별 스크립트
+		$(document).ready(function() {
+
+		});
+	</script>
+
+</body>
+</html>

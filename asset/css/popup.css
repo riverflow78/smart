@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/*
+30px: 2rem;
+29px: 1.93rem;
+28px: 1.87rem;
+27px: 1.8rem;
+26px: 1.73rem;
+25px: 1.67rem;
+24px: 1.6rem;
+23px: 1.53rem;
+22px: 1.47rem;
+21px: 1.4rem;
+20px: 1.33rem;
+19px: 1.27rem;
+18px: 1.2rem;
+17px: 1.13rem;
+16px: 1.07rem;
+15px: 1rem;
+14px: 0.93rem;
+13px: 0.87rem;
+12px: 0.8rem;
+*/
+
+/* --------------------------------
+모달 레이어 공통
+------------------------------- */
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+	display: table;
+	content: " ";
+}
+.modal-header:after,
+.modal-footer:after {
+	clear: both;
+}
+.modal-open {
+	overflow: hidden;
+}
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	outline: 0;
+}
+.modal-open .modal {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal-dialog {
+	position: relative;
+	width: 500px;
+	margin: 30px auto;
+}
+.modal-content {
+	position: relative;
+	outline: 0;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+.modal-backdrop.fade {
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.modal-backdrop.in {
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+}
+.modal-header {
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+	background: #126abd;
+	color: #fff;
+	font-size:1.33rem;
+	font-weight: bold;
+	padding: 0 30px;
+}
+.modal-header .close {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	width: 24px;
+	height: 24px;
+	border: 0;
+	font-size: 0;
+	transform: translateY(-50%);
+}
+.modal-header .close:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: '\f00d';
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+@media screen and (min-width:0\0){
+	.modal-header .close:after {
+		top: -50%;
+	}
+}
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+}
+.modal-body {
+	position: relative;
+	background: #fff;
+	padding:30px 30px 45px;
+}
+.modal-body:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.modal-footer {
+	position:relative;
+	background: #fff;
+	padding:0 30px 25px;
+	margin-top:-25px;
+}
+.modal-footer .buttonSet {
+	margin-top: 0;
+}
+.modal-scrollbar-measure {
+	position: absolute;
+	top: -9999px;
+	width: 50px;
+	height: 50px;
+	overflow: scroll;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1040;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+}
+.modal-backdrop.fade {
+	opacity: 0;
+}
+.modal-backdrop.show {
+	opacity: 0.5;
+}

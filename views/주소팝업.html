@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>전기안전여기로</title>
+
+	<!-- [common css] -->
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/frame.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/contents.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/popup.css" />
+
+	<!-- [common js] : 전체 페이지 공통사용 스크립트만 기재. 페이지별 독립 스크립트는 페이지 하단의 스크립트영역에 추가. -->
+	<script type="text/javascript" src="../asset/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
+
+	<!-- [vendor] -->
+	<!-- swiper -->
+	<link rel="stylesheet" type="text/css" href="../asset/vendor/swiper/swiper.css" />
+	<script type="text/javascript" src="../asset/vendor/swiper/swiper.js"></script>
+	<!-- bootstrap-3.4.1 -->
+	<script type="text/javascript" src="../asset/vendor/bootstrap/bootstrap-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div class="address_popup">
+		<div class="addList">
+			<div class="addSch">
+				<input type="text"><button type="submit">검색</button>
+			</div>
+
+			<!-- 검색 결과가 있을 때 보이는 부분 -->
+			<div class="branch_list">
+				<table data-table="map">
+					<tbody>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>A</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>B</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>C</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>D</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>A</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>A</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>A</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									<a class="branch"><i>A</i>한국전기안전공사 본사</a>
+									<span class="branch_add1">전북 완주군 이서면 안전로 111</span>
+									<span class="branch_add2">(지번) 이서면 갈산리 666</span>
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- 페이징은 리스트 갯수사 4개를 초과하면 보이게 -->
+			<div class="pagination">
+				<a href="#">처음</a>
+				<strong>1</strong>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">다음</a>
+			</div>
+			<!-- //검색 결과가 있을 때 -->
+
+
+
+			<!-- 검색 결과가 없을 때 보이는 부분  -->
+			<!-- <div class="branch_list_none">
+				<span><strong>안전로11155</strong> 검색 결과가 없어요.</span>
+				검색어의 철자가 정확한지 다시 한번 확인해 주세요.<br>장소를 찾을 때 전화번호, 주소도 활용해 보세요.
+			</div> -->
+			<!-- //검색 결과가 없을 때 -->
+		</div>
+		<!-- 맵 영역:  가로:673px, 세로:540px -->
+		<div class="location">
+			맵 영역 가로:673px, 세로:540px
+		</div>
+	</div>
+
+
+	<script>
+		// 페이지 개별 스크립트
+		$(document).ready(function() {
+
+		});
+	</script>
+
+</body>
+</html>

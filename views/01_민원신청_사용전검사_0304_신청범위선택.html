@@ -1,0 +1,313 @@
+	<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no"/>
+	<title>사용전검사</title>
+
+	<!-- [common css] -->
+	<link rel="stylesheet" type="text/css" href="../asset/css/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/frame.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/contents.css" />
+	<link rel="stylesheet" type="text/css" href="../asset/css/popup.css" />
+
+	<!-- [common js] : 전체 페이지 공통사용 스크립트만 기재. 페이지별 독립 스크립트는 페이지 하단의 스크립트영역에 추가. -->
+	<script type="text/javascript" src="../asset/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="../asset/js/common.js"></script>
+
+	<!-- [vendor] -->
+	<!-- swiper -->
+	<link rel="stylesheet" type="text/css" href="../asset/vendor/swiper/swiper.css" />
+	<script type="text/javascript" src="../asset/vendor/swiper/swiper.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<header>
+			<div class="container">
+				<h1><a href="#" title="홈">전기안전여기로</a></h1>
+				<div class="gnb">
+					<ul>
+						<li><a href="#none" class="depth1" title="민원신청 메뉴">민원신청</a>
+							<ul>
+								<!-- 활성화 active -->
+								<li><a href="#"  class="active" title="민원신청안내 페이지로이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="수수료안내/납부 메뉴">수수료안내/납부</a>
+							<ul>
+								<li><a href="#" title="수수료 안내 페이지로이동">수수료 안내</a></li>
+								<li><a href="#" title="수수료 결제 페이지로이동">수수료 결제</a></li>
+								<li><a href="#" title="전자세금계산서 확인 페이지로이동">전자세금계산서 확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="알림마당 메뉴">알림마당</a>
+							<ul>
+								<li><a href="#" title="민원신청 이용안내 페이지로이동">민원신청 이용안내</a></li>
+								<li><a href="#" title="공지사항 페이지로이동">공지사항</a></li>
+								<li><a href="#" title="자주묻는 질문(FAQ) 페이지로이동">자주묻는 질문(FAQ)</a></li>
+								<li><a href="#" title="질문 답변(Q&amp;A) 페이지로이동">질문 답변(Q&amp;A)</a></li>
+								<li><a href="#" title="통합자료실 페이지로이동">통합자료실</a></li>
+								<li><a href="#" title="확인증 진위확인 페이지로이동">확인증 진위확인</a></li>
+							</ul>
+						</li>
+						<li><a href="#none" class="depth1" title="나의민원 메뉴">나의민원</a>
+							<ul>
+								<li><a href="#" title="민원신청 내역 페이지로이동">민원신청 내역</a></li>
+								<li><a href="#" title="사용전점검 결과확인 페이지로이동">사용전점검 결과확인</a></li>
+								<li><a href="#" title="위임자 관리 페이지로이동">위임자 관리</a></li>
+								<li><a href="#" title="협업자 관리 페이지로이동">협업자 관리</a></li>
+								<li><a href="#" title="설비정보 관리 페이지로이동">설비정보 관리</a></li>
+								<li><a href="#" title="업체 등록정보 관리 페이지로이동">업체 등록정보 관리</a></li>
+								<li><a href="#" title="전기안전관리자 점검관리페이지로이동">전기안전관리자 점검관리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul class="utility">
+					<!-- <li><a href="#" title="로그인">로그인</a></li>
+					<li><a href="#" title="회원가입">회원가입</a></li> -->
+					<li><a href="#">로그아웃</a></li>
+					<li><a href="#" title="마이페이지">마이페이지</a></li>
+
+					<!-- 로그인 여부와 관계없이 항상 보인다 -->
+					<li><a href="#" title="사이트맵"><span></span></a></li>
+				</ul>
+			</div>
+		</header>
+
+		<nav class="pnb">
+			<h2>페이지 네비게이션</h2>
+			<div class="container">
+				<!--
+					-1뎁스 카테고리.
+					-선택하면 해당 페이지로 이동.
+					-이동페이지는 해당 뎁스의 2뎁스 첫 번째.(eg: 1뎁스 민원신청을 누르면 2뎁스 민원신청안내 페이지로 이동)
+				-->
+				<div class="lnb">
+					<ul>
+						<li><a href="#none" class="depth1">민원신청</a>
+							<ul class="snb">
+								<!-- 활성화 active -->
+								<li><a href="#" class="active" title="민원신청 메뉴 보기">민원신청안내</a></li>
+								<li><a href="#" title="수수료안내/납부 메뉴 보기">수수료안내/납부</a></li>
+								<li><a href="#" title="알림마당 메뉴 보기">알림마당</a></li>
+								<li><a href="#" title="나의민원 메뉴 보기">나의민원</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--
+					-2뎁스 카테고리.
+					-1뎁스에 해당하는 2뎁스 메뉴 표기
+					-위에서 1뎁스 민원신청을 누르면 민원신청안내 페이지로 이동 이동되고
+					-1뎁스에 해당되는 2뎁스 메뉴를 뿌려준후, current메뉴 표기.
+					-같은 1뎁스 메뉴이동시는 해당 2뎁스 메뉴를 활성화
+				-->
+				<div class="lnb">
+					<ul>
+						<li><a href="#none" class="depth1">민원신청안내</a><!-- 현재 current 메뉴 표기 -->
+							<ul class="snb">
+								<!-- 활성화 active -->
+								<li><a href="#" class="active" title="민원신청안내 페이지로 이동">민원신청안내</a></li>
+								<li><a href="#" title="공사계획신고 페이지로 이동">공사계획신고</a></li>
+								<li><a href="#" title="사용전검사 페이지로 이동">사용전검사</a></li>
+								<li><a href="#" title="사용전점검 페이지로 이동">사용전점검</a></li>
+								<li><a href="#" title="정기검사 페이지로 이동">정기검사</a></li>
+								<li><a href="#" title="전기안전점검 페이지로 이동">전기안전점검</a></li>
+								<li><a href="#" title="안전진단 페이지로 이동">안전진단</a></li>
+								<li><a href="#" title="안전관리대행(계약) 페이지로 이동">안전관리대행(계약)</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section>
+			<h2>사용전검사</h2>
+			<div class="container">
+				<div class="page-header">
+					<span>사용전검사</span>
+					<ul>
+						<li><i class="far fa-print"></i></li>
+					</ul>
+				</div>
+				<div class="contents">
+
+
+
+					<ol class="process col6">
+						<li>
+							<span><strong>Step 01</strong>사용전검사안내</span>
+						</li>
+						<li>
+							<span><strong>Step 02</strong>고객설비찾기</span>
+						</li>
+						<li class="active">
+							<span><strong>Step 03</strong>고객정보입력</span>
+						</li>
+						<li>
+							<span><strong>Step 04</strong>첨부파일등록</span>
+						</li>
+						<li>
+							<span><strong>Step 05</strong>전자서명</span>
+						</li>
+						<li>
+							<span><strong>Step 06</strong>결제 및 희망일</span>
+						</li>
+					</ol>
+
+
+					<div class="align-center mgt30">
+						<ol class="scene">
+							<li class="passed">
+								<span>1</span><span>신청인 정보입력</span>
+							</li>
+							<li class="passed">
+								<span>2</span><span>관계업체정보입력</span>
+							</li>
+							<li class="passed">
+								<span>3</span><span>호기정보입력</span>
+							</li>
+							<li class="passed">
+								<span>4</span><span>신청범위 선택</span>
+							</li>
+							<li>
+								<span>5</span><span>금회 검사받을 전기설비</span>
+							</li>
+						</ol>
+					</div>
+
+
+					<p class="title-depth1 mgt30">사용전검사 신청 범위</p>
+					<p class="text-info fs13 fc_default mgt5 pdl10">※ 금회 사용전검사 신청 범위를 선택하시기 바랍니다.</p>
+
+					<div class="box-skew request_con">
+						<div>
+							<strong><i class="ico_bl_check"></i>최초설치공사</strong>
+							<div>
+								<p class="search-box">대용량(아파트, 대규모 공장, 전기저장장치 등)  전기설비 고객은 공사 공정 및 현장 여건에 따라 추가로 부분검사를 실시할 수 있음을 안내드립니다.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="box-skew request_con">
+						<div>
+							<strong><i class="ico_bl_check"></i>수전용 변압기 없이 바로 수전하는 고압전동기</strong>
+						</div>
+					</div>
+
+					<div class="box-skew request_con">
+						<div>
+							<strong><i class="ico_bl_check"></i>전체 전기설비</strong> <span>금회변경 및 추가 설치분 포함</span><button type="button" class="btn-default btn-line-gray mgl20">정기검사 예정월 조회</button>
+							<div>
+								<div class="custom-check"><input type="radio" id="radioT1-1" name="radioT1" checked><label for="radioT1-1"><span>설치공사</span></label></div>
+								<p class="search-box mgt10">증빙자료 제출 불가능시 부분검사(접지저항측정검사)로 접수 진행됩니다.</p>
+								<div class="custom-check mgt20"><input type="radio" id="radioT1-2" name="radioT1"><label for="radioT1-2"><span>금회 신규로 추가설치한일체의전기설비</span></label></div><!-- 20200422 modify -->
+								<p class="search-box mgt10">대용량(아파트, 대규모 공장, 전기저장장치 등)  전기설비 고객은 공사 공정 및 현장 여건에 따라 추가로 부분검사를 실시할 수 있음을 안내드립니다.</p>
+								<!-- [s] 20200422 modify -->
+								<div class="attcArea mgt10"><!-- @class(attcArea) : 개발용 class -->
+									<em class="btn-default attc_btn">파일 선택<input type="file"></em>
+									<div class="attc_con">
+										<button type="button">· 설계도면전체파일.zip <i class="ico_del"></i></button>
+										<button type="button">· 설계도면전체파일.zip <i class="ico_del"></i></button>
+										<button type="button">· 설계도면전체파일.zip <i class="ico_del"></i></button>
+										<button type="button">· 설계도면전체파일.zip <i class="ico_del"></i></button>
+									</div>
+								</div>
+								<!-- [e] 20200422 modify -->
+							</div>
+						</div>
+					</div>
+
+					<div class="box-skew request_con">
+						<div>
+							<strong><i class="ico_bl_check"></i>부분검사</strong> <span>일부 우선 완성된 전기설비 부분검사 신청 또는 전기저장장치(ESS)운전시험</span>
+							<div>
+								<div class="custom-check inline"><input type="radio" id="radioT2-1" name="radioT2" checked><label for="radioT2-1"><span>설치공사</span></label></div>
+								<input type="text" placeholder="예) 지하 수전실, 101동~105동 세대, 지하 공용설비" class="mgl10 w_p35">
+								<button type="button" class="btn-default btn-line-gray mgl5">등록</button>
+								<p class="search-box mgt10">공사계획에 의한 변압기 뱅크별, 건물별, 층별, 동별 등 설비별 또는 건물별로 부분적인 구획이 가능한 범위로 기록</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="box-skew request_con">
+						<div>
+							<strong><i class="ico_bl_check"></i>부분검사  재검사</strong>
+							<div>
+								<ul class="list">
+									<li>전회검사 불합격 상세내역</li>
+								</ul>
+								<p class="search-box mgt10">수변전실 판넬(큐비클)명 기기 또는 측정시험 등(모바일 설계 참조)<br>종합의견</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="box-skew request_con">
+						<div>
+							<strong><i class="ico_bl_check"></i>저압 자가용수전설비 최초설치공사</strong>
+							<div>
+								<p class="search-box">수전설비 전체 125kW 중 금회 신청분 25kW</p><!-- 20200422 modify -->
+							</div>
+						</div>
+					</div>
+
+
+					<div class="box-blue request_con">
+						<div>
+							<b>동일 지번에 고객님의 다른 전기설비(호기) 존재합니다.<br>금회 사용전검사와 함께 해당 호기 정기검사를 신청하시겠습니까?</b>
+							<span class="fs13 fc_gray2">※ 검사시 정전으로 인한 불편함을 줄이기 위하여 비상용발전설비는 수전설비와 함께 검사 신청을 추천드립니다.(권장)</span>
+							<div class="custom-check"><input type="checkbox" id="checkB1"><label for="checkB1"><span>2호기 자가용 발전설비(내연력발전) 380V 10kW 정기검사 예정월 2020년 3월</span></label>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="stepNav buttonGroup align-both mgt100"><!-- 20200422 modify -->
+						<div>
+							<button type="button" class="btn-large btn-line-blue"><i class="fas fa-chevron-left"></i>이전단계</button>
+						</div>
+						<div>
+							<button type="button" class="btn-large btn-bg-blue">다음단계<i class="fas fa-chevron-right"></i></button>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div><!-- //contents -->
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				푸터
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		// 페이지 개별 스크립트
+		$( document ).ready(function() {
+
+		});
+	</script>
+
+</body>
+</html>
